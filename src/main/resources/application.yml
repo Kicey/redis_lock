@@ -1,0 +1,19 @@
+
+spring:
+  redis:
+    host: ${your_host}
+    port: 6379
+    password: ${your_password}
+    database: 0
+    connect-timeout: 3000ms
+    jedis:
+      pool:
+        enabled: true
+        max-active: 16
+        max-wait: -1
+        max-idle: 16
+        min-idle: 0
+
+logging:
+  level:
+    root: info
